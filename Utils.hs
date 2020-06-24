@@ -26,10 +26,10 @@ isPrime 1 = False
 isPrime n | (length [x | x <- [2 .. n-1], mod n x == 0]) > 0 = False
           | otherwise = True
 
-celcToFarhen c = (c * 9/5) + 32
-farhenToCelc f = (f - 32) * 5/9
+celcToFahren c = (c * 9/5) + 32
+fahrenToCelc f = (f - 32) * 5/9
 
 celcToKelv c = c + 273
 kelvToCelc k = k - 273
-farhenTokelv f = celcToKelv (farhenToCelc f)
-kelvToFarhen k = farhenToCelc (kelvToCelc k) 
+fahrenToKelv f = celcToKelv (fahrenToCelc f)
+kelvToFahren k = fahrenToCelc (kelvToCelc k) 
