@@ -15,6 +15,7 @@ If not, see <https://www.gnu.org/licenses/>.
 
 circleArea d = ((d/2.0) ^ 2) * pi
 squareArea s = s^2
+parellelogramArea w h = sqrt (w^2 - h^2) * h
 rectangleArea w h = w * h
 triangleAreaS a b c = s * ((s-a) + (s-b) + (s-c))
                         where s = (a+b+c) / 2.0
